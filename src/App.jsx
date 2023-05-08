@@ -1,19 +1,20 @@
-
 import './App.css'
 import About from './components/About'
 import Contacto from './components/Contacto';
 import { Info } from './components/Info';
 
 function App() {
-  
   return (
     <div>
       <Contacto/>
-      <About 
+    <About 
       name='Javier Lopez Aliste'
-      username='@JavierLopezA99'/>
-      <Info/>
+      username='@JavierLopezA99'
+    />
+    <Info/>
     </div>
+    
+ 
   )
 }
 

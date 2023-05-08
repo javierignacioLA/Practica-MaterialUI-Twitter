@@ -21,16 +21,16 @@ const Contacto = () => {
   return (
     <div><Typography variant='h6' component='div'> Twitter Card, Contacto:</Typography>
     <IconButton aria-label="delete"  color="primary">
-        <TwitterIcon onClick={handleTwitter}/>
+        <TwitterIcon color='secondary' onClick={handleTwitter}/>
     </IconButton>
     <IconButton aria-label="delete" color="primary">
-        <LinkedInIcon onClick={handleLinkedin}/>
+        <LinkedInIcon color='secondary' onClick={handleLinkedin}/>
     </IconButton>
     <IconButton aria-label="delete" color="primary">
-        <GitHubIcon onClick={handleGitHub}/>
+        <GitHubIcon  color='secondary'onClick={handleGitHub}/>
     </IconButton>
     <IconButton aria-label="delete" color="primary">
-        <AttachmentIcon onClick={handleDownload}/>
+        <AttachmentIcon  color='secondary' onClick={handleDownload}/>
     </IconButton>
     
     </div>

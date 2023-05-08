@@ -3,16 +3,24 @@ import Avatar from '@mui/material/Avatar';
 import PropTypes from 'prop-types';
 import '../About.css'
 import { useState } from 'react';
+import {Typography } from '@mui/material'
+import styled from '@emotion/styled';
+import CustomButton from './CustomButton';
+import { useTheme } from '@mui/material/styles';
 
 const About = ({name, username}) => {
+  const theme = useTheme()
   const [follow, setFollow] = useState(true)
-  const claseBoton = follow? 
-  'tw-followCard-button'
-  :'tw-followCard-button is-following'
   const handleFollow = () => {
     setFollow(!follow)
   }
-  
+  const Span =  styled ('span') ({
+    display: 'flex',
+    flexDirection: 'column',
+    opacity: .6,
+    color: theme.palette.mode === 'dark' ? '#0e76a8' : '#f12'
+
+  })
   return (
     <div >
       <div className='contenedor'>
@@ -23,12 +31,15 @@ const About = ({name, username}) => {
         </header>
         <div className='tw-followCard-info'>
           <div className='tw-followCard-names'>
-          <strong>{name}</strong>
-        <span className='tw-followCard-infoUserName'>{username}</span>
+          <Typography fontSize={12.4} color={theme.palette.mode === 'dark' ? '#0e76a8' : 'black'} >{name}</Typography>
+        <Span>{username}</Span>
         
           </div>
           <aside>
-            <button className={claseBoton} onClick={handleFollow}>{follow? 'Seguir': 'Siguiendo'}</button>
+          <CustomButton onClick={handleFollow} className={`${follow ? 'tw-followCard-button' : 'tw-followCard-button is-following'} ${theme.palette.mode === 'dark' ? 'dark' : 'white'}`}>
+            {follow ? 'Seguir' : 'Siguiendo'}
+          </CustomButton>
+
           </aside>
         </div>
         
