@@ -22,7 +22,7 @@ const Contacto = () => {
 
       };
   return (
-    <div style={{transform: "scale(1.2)"}}><Typography variant='h6' component='div'> Twitter Card, Contacto:</Typography>
+    <div><Typography variant='h6' component='div'> Twitter Card, Contacto:</Typography>
     <IconButton aria-label="delete" color="primary">
         <LinkedInIcon color='secondary' onClick={handleLinkedin}/>
     </IconButton>

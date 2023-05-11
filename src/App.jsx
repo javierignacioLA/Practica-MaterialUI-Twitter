@@ -3,6 +3,7 @@ import About from './components/About'
 import Contacto from './components/Contacto';
 import { Info } from './components/Info';
 
+
 function App() {
   return (
     <div>
