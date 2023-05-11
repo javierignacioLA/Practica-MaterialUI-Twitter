@@ -7,12 +7,22 @@ const theme = createTheme({
   palette: {
     mode: 'dark', // o 'dark'
     primary: {
-      main: '#000',
+      main: '#fff',
     },
     secondary: {
       main: '#0e76a8',
     },
   },
+  palette2: {
+    mode: 'light',
+    primary: {
+      main: '#000',
+    },
+    secondary: {
+      main: '#0e76a8',
+    },
+  }
+  
 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(

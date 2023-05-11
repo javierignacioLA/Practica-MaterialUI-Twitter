@@ -5,6 +5,7 @@ import AttachmentIcon from '@mui/icons-material/Attachment';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
 
+
 const Contacto = () => {
     const handleLinkedin = () =>{
       window.open('https://www.linkedin.com/in/javier-lopez-aliste/', '_blank');
@@ -21,7 +22,7 @@ const Contacto = () => {
 
       };
   return (
-    <div><Typography variant='h6' component='div'> Twitter Card, Contacto:</Typography>
+    <div style={{transform: "scale(1.2)"}}><Typography variant='h6' component='div'> Twitter Card, Contacto:</Typography>
     <IconButton aria-label="delete" color="primary">
         <LinkedInIcon color='secondary' onClick={handleLinkedin}/>
     </IconButton>
